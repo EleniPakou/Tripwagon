@@ -20,7 +20,7 @@
     <!--OpenLayers-->
     <script src="https://cdn.rawgit.com/openlayers/openlayers.github.io/master/en/v5.3.0/build/ol.js"></script>
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
 
 </head>
 
@@ -29,9 +29,17 @@
     <div class="container mt-5">
 
         <!--SEARCHBAR-->
-        <section class="row searchbar border">
-            <div class="col border">
-                SEARCHBAR
+        <section class="row searchbar pt-3">
+            <div class="col">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text bg-white border-0"><i class="fas fa-search text-black-50"></i></span>
+                    </div>
+                    <input type="text" class="form-control border-0" aria-label="Location">
+                    <div class="input-group-append">
+                        <button class="input-group-text bg-info text-white px-5 border-0">Search</button>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -74,7 +82,8 @@
 
     </div>
 
-    <script src="js/app.js"></script>
+    
+    <script src="app.js"></script>
 </body>
 
 </html>
