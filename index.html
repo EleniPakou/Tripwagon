@@ -33,9 +33,21 @@
             <div class="col">
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
-                        <span class="input-group-text bg-white border-0"><i class="fas fa-search text-black-50"></i></span>
+                        <span class="input-group-text bg-white border-0"><i
+                                class="fas fa-search text-black-50"></i></span>
                     </div>
-                    <input type="text" class="form-control border-0" aria-label="Location">
+
+                    <!--REPLACE WITH <datalist>-->
+                    <input list="cities-list" class="form-control border-0" id="cities" name="cities" aria-label="Location"/>
+                    
+                    <datalist id="cities-list">
+                        <!--REPLACE WITH DYNAMIC CODE-->
+                        <!-- <option value="Paris"></option>
+                        <option value="Toulouse"></option>
+                        <option value="Marseille"></option> -->
+                        <!--REPLACE WITH DYNAMIC CODE-->
+                        
+                    </datalist>
                     <div class="input-group-append">
                         <button class="input-group-text bg-info text-white px-5 border-0">Search</button>
                     </div>
@@ -82,7 +94,7 @@
 
     </div>
 
-    
+
     <script src="app.js"></script>
 </body>
 
