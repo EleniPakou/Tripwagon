@@ -65,6 +65,21 @@ function init($) {
     // `TEXT and dynamic ${values} from JS ${5+5}`
   }
 
+  //HANDLE CITIES INPUT
+
+  let citiesInput = document.querySelector( "#cities");
+  citiesInput.addEventListener("keydown", handleCityInput);
+
+  function handleCityInput(e){
+    if (e.keyCode === 13) {
+      console.log("get hotels from city...");
+      //1) get city value
+      // [HINT: e.target, this]
+      
+      let selectedCity = this.value; //=== citiesInput.value;
+      console.log(this.value);
+    }
+  }
   $.ajax(options);
 
 }
