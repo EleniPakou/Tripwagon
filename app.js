@@ -48,6 +48,7 @@ function init($) {
     //console.log(entries);
     let cities = entries.map(getCity);  // Array [ {HOTEL} x 4 ]
     let uniqueCities = removeDups(cities);
+    uniqueCities.sort();
 
     console.log(uniqueCities);
     // ["Paris", "Marseille", "Toulouse"];
